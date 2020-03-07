@@ -7,8 +7,13 @@ import importlib
 def install(pack):
     cmd = ['pip','install','--user']
     cmd.append(pack)
-    result = subprocess.run(cmd, stdout=subprocess.PIPE)
-    print(result.stdout)
+    result = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    out = result.stdout.readlines()
+    for x in out:
+        out[out.index(x)] = x.decode('utf-8').strip()
+    # out = out.splitlines()
+    for x in out:
+        print(x)
 
 if __name__ == '__main__':
     package = sys.argv[1:]
