@@ -4,7 +4,6 @@
 
 It stores the package names of the packages that you want to install in a text file called 'requirements.txt', so that if you are migrating to another machine it becomes easier for you to install all the modules that you had previously installed in the older machine.
 You just need to carry the 'requirements.txt' file.
-
 **Installing packages one by one:**
 ```
 pypack <packagename>
