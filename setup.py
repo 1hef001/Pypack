@@ -7,7 +7,7 @@ from setuptools import setup
 dependencies = []
 setup(
     name='pypack',
-    version='0.1.6',
+    version='0.1.7',
     url='https://github.com/1hef001/Pypack',
     license='MIT',
     author='S Ashwin',
@@ -18,8 +18,13 @@ setup(
     include_package_data=True,
     zip_safe=False,
     platforms='any',
-    scripts=['pypack/main.py'],
+    scripts=['pypack/pypack.py'],
     install_requires=dependencies,
+    entry_points={
+        'console_scripts': [
+            'pypack = pypack.pypack:main',
+        ]
+    },
     
 
     classifiers=[

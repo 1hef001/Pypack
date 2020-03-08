@@ -25,7 +25,8 @@ def execute(cmd):
         print(x)
 
 
-if __name__ == '__main__':
+
+def main():
     installed = [pkg.key for pkg in pkg_resources.working_set]
     package = sys.argv[1:]
     # print(package)
@@ -108,4 +109,5 @@ if __name__ == '__main__':
         
 
 
-
+if __name__ == '__main__':
+    main()
