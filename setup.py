@@ -6,7 +6,7 @@ from setuptools import setup
 
 dependencies = []
 setup(
-    name='mera_photo',
+    name='pypack',
     version='0.1.6',
     url='https://github.com/1hef001/Pypack',
     license='MIT',
